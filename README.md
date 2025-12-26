@@ -1,8 +1,8 @@
-# basicScroll
+# Cindy's lab - basicScroll
 
 [![Donate via PayPal](https://img.shields.io/badge/paypal-donate-009cde.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CYKBESW577YWE)
 
-Standalone parallax scrolling for mobile and desktop with CSS variables.
+This is my first test Github website.
 
 basicScroll allows you to change CSS variables depending on the scroll position. Use the variables directly in your CSS to animate whatever you want. Highly inspired by [skrollr](https://github.com/Prinzhorn/skrollr) and [Reactive Animations with CSS Variables](http://slides.com/davidkhourshid/reactanim#/).
 
