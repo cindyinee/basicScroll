@@ -1,65 +1,65 @@
-# Cindy's lab - basicScroll
+# Cindy 的實驗室 - basicScroll
 
 [![Donate via PayPal](https://img.shields.io/badge/paypal-donate-009cde.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CYKBESW577YWE)
 
-This is my first test Github website.
+這是我的第一個測試 GitHub 網站。
 
-basicScroll allows you to change CSS variables depending on the scroll position. Use the variables directly in your CSS to animate whatever you want. Highly inspired by [skrollr](https://github.com/Prinzhorn/skrollr) and [Reactive Animations with CSS Variables](http://slides.com/davidkhourshid/reactanim#/).
+basicScroll 能依照捲動位置變更 CSS 變數。直接在 CSS 中使用這些變數，讓你可以製作任何想要的動畫。靈感來自 [skrollr](https://github.com/Prinzhorn/skrollr) 與 [Reactive Animations with CSS Variables](http://slides.com/davidkhourshid/reactanim#/)。
 
-## Contents
+## 目錄
 
-- [Demos](#demos)
-- [Tutorials](#tutorials)
-- [Features](#features)
-- [Requirements](#requirements)
-- [Setup](#setup)
+- [示範](#示範)
+- [教學](#教學)
+- [功能](#功能)
+- [需求](#需求)
+- [安裝](#安裝)
 - [API](#api)
-- [Instance API](#instance-api)
-- [Data](#data)
-- [Related](#related)
-- [Tips](#tips)
+- [實例 API](#實例-api)
+- [資料](#資料)
+- [相關資源](#相關資源)
+- [小技巧](#小技巧)
 
-## Demos
+## 示範
 
-| Name | Description | Link | Author |
+| 名稱 | 描述 | 連結 | 作者 |
 |:-----------|:------------|:------------|:------------|
-| Default | Includes most features | [Try it on CodePen](http://codepen.io/electerious/pen/QGNxxx) |
-| Callback | Animate properties in JS via callbacks | [Try it on CodePen](https://codepen.io/electerious/pen/goZRBv) |
-| Parallax scene | A composition of multiple, moving layers | [Try it on CodePen](http://codepen.io/electerious/pen/gLLozQ) | [@electerious](https://twitter.com/electerious) |
-| Rolling eyes | Custom element to track scrolling | [Try it on CodePen](https://codepen.io/electerious/pen/MZJZxm) | [@electerious](https://twitter.com/electerious) |
-| Headline explosion | Animated letters | [Try it on CodePen](https://codepen.io/electerious/pen/EQzxxJ) | [@electerious](https://twitter.com/electerious) |
-| Scroll and morph | Morph text using CSS clip-path | [Try it on CodePen](https://codepen.io/ainalem/pen/jZzxrP) | [@mikaelainalem](https://twitter.com/mikaelainalem) |
-| Parallax with JS | Several examples and a debug mode | [Try it on CodePen](https://codepen.io/animaticss/pen/rNBJwmq) | [AnimatiCSS](https://www.youtube.com/channel/UC73Tk5wfEBh67Vm7gM_zaAw) |
+| 預設 | 涵蓋大部分功能 | [在 CodePen 上試用](http://codepen.io/electerious/pen/QGNxxx) |
+| 回呼 | 透過回呼以 JS 動態設定屬性 | [在 CodePen 上試用](https://codepen.io/electerious/pen/goZRBv) |
+| 視差場景 | 多層次移動的構圖 | [在 CodePen 上試用](http://codepen.io/electerious/pen/gLLozQ) | [@electerious](https://twitter.com/electerious) |
+| 轉動的眼睛 | 追蹤捲動的自訂元素 | [在 CodePen 上試用](https://codepen.io/electerious/pen/MZJZxm) | [@electerious](https://twitter.com/electerious) |
+| 標題爆炸 | 逐字動畫 | [在 CodePen 上試用](https://codepen.io/electerious/pen/EQzxxJ) | [@electerious](https://twitter.com/electerious) |
+| 捲動與變形 | 使用 CSS clip-path 變形文字 | [在 CodePen 上試用](https://codepen.io/ainalem/pen/jZzxrP) | [@mikaelainalem](https://twitter.com/mikaelainalem) |
+| JavaScript 視差 | 多個範例與除錯模式 | [在 CodePen 上試用](https://codepen.io/animaticss/pen/rNBJwmq) | [AnimatiCSS](https://www.youtube.com/channel/UC73Tk5wfEBh67Vm7gM_zaAw) |
 
-## Tutorials
+## 教學
 
-| Name | Link |
+| 名稱 | 連結 |
 |:-----------|:------------|
-| 📃 Parallax scrolling with JS controlled CSS variables | [Read it on Medium](https://medium.com/@electerious/parallax-scrolling-with-js-controlled-css-variables-63cfe96820c7) |
-| 🎬 Apple-like scroll animations | [Watch it on YouTube](https://www.youtube.com/watch?v=hPd1srSWDU4) |
-| 🎬 Parallax effect tutorial (🇪🇸) | [Watch it on YouTube](https://www.youtube.com/watch?v=QeRg4t3I2zc) |
+| 📃 使用 JS 控制的 CSS 變數實作視差捲動 | [在 Medium 閱讀](https://medium.com/@electerious/parallax-scrolling-with-js-controlled-css-variables-63cfe96820c7) |
+| 🎬 蘋果風格的捲動動畫 | [在 YouTube 觀看](https://www.youtube.com/watch?v=hPd1srSWDU4) |
+| 🎬 視差效果教學（🇪🇸） | [在 YouTube 觀看](https://www.youtube.com/watch?v=QeRg4t3I2zc) |
 
-## Features
+## 功能
 
-- Framework independent
-- Insane performance
-- Support for mobile and desktop
-- CommonJS and AMD support
-- Simple JS API
+- 不依賴任何框架
+- 極佳的效能
+- 同時支援行動裝置與桌面裝置
+- 支援 CommonJS 與 AMD
+- 簡單的 JS API
 
-## Requirements
+## 需求
 
-basicScroll depends on the following browser features and APIs:
+basicScroll 依賴以下瀏覽器功能與 API：
 
-- [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*)
+- [CSS 自訂屬性](https://developer.mozilla.org/en-US/docs/Web/CSS/--*)
 - [Object.assign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
 - [window.requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
 
-Some of these APIs are capable of being polyfilled in older browsers. Check the linked resources above to determine if you must polyfill to achieve your desired level of browser support.
+部分 API 可在舊版瀏覽器中透過 polyfill 支援。請查看上述連結以確認你是否需要 polyfill 才能達到想要的瀏覽器支援度。
 
-## Setup
+## 安裝
 
-We recommend installing basicScroll using [npm](https://npmjs.com) or [yarn](https://yarnpkg.com).
+我們建議使用 [npm](https://npmjs.com) 或 [yarn](https://yarnpkg.com) 安裝 basicScroll。
 
 ```sh
 npm install basicscroll
@@ -69,13 +69,13 @@ npm install basicscroll
 yarn add basicscroll
 ```
 
-Include the JS file at the end of your `body` tag…
+在 `body` 標籤的末端加入 JS 檔案…
 
 ```html
 <script src="dist/basicScroll.min.js"></script>
 ```
 
-…or skip the JS file and use basicScroll as a module:
+…或跳過 JS 檔案，直接以模組方式使用 basicScroll：
 
 ```js
 const basicScroll = require('basicscroll')
@@ -85,11 +85,11 @@ const basicScroll = require('basicscroll')
 import * as basicScroll from 'basicscroll'
 ```
 
-## Usage
+## 使用方式
 
-This demo shows how to to change the opacity of an element when the user scrolls. The element starts to fade as soon as the top of the element reaches the bottom of the viewport. A opacity of `.99` is reached when the middle of the element is in the middle of the viewport.
+以下示範如何依捲動改變元素透明度。當元素頂端觸及視窗底部時便開始淡出，當元素的中央位於視窗中央時會達到 `.99` 的透明度。
 
-Tip: Animating from `.01` to `.99` avoids the repaints that normally occur when the element changes from fully transparent to translucent and from translucent to fully visible.
+小提示：從 `.01` 動畫到 `.99` 能避免元素在完全透明與半透明之間切換時產生的重新繪製。
 
 ```js
 const instance = basicScroll.create({
@@ -110,13 +110,12 @@ instance.start()
 ```css
 .element {
 	/*
-	 * Use the same CSS variable as specified in our instance.
+	 * 與實例中指定的 CSS 變數保持一致。
 	 */
 	opacity: var(--opacity);
 	/*
-	 * The will-change CSS property provides a way for authors to hint browsers about the kind of changes
-	 * to be expected on an element, so that the browser can setup appropriate optimizations ahead of time
-	 * before the element is actually changed.
+	 * will-change 可告訴瀏覽器元素預期會有的變化，
+	 * 讓瀏覽器能提前做好最佳化。
 	 */
 	will-change: opacity;
 }
@@ -126,16 +125,16 @@ instance.start()
 
 ### .create(html, opts)
 
-Creates a new basicScroll instance.
+建立新的 basicScroll 實例。
 
-Be sure to assign your instance to a variable. Using your instance, you can…
+別忘了將實例指定給變數。透過實例你可以…
 
-* …start and stop the animation.
-* …check if the instance is active.
-* …get the current props.
-* …recalculate the props when the window size changes.
+* …啟動或停止動畫。
+* …檢查實例是否正在運作。
+* …取得目前的 props。
+* …在視窗尺寸改變時重新計算 props。
 
-Examples:
+範例：
 
 ```js
 const instance = basicScroll.create({
@@ -179,23 +178,23 @@ const instance = basicScroll.create({
 })
 ```
 
-Parameters:
+參數：
 
-- `data` `{Object}` An object of [data](#data).
+- `data` `{Object}` 一組 [資料](#資料)。
 
-Returns:
+回傳：
 
-- `{Object}` The created instance.
+- `{Object}` 創建的實例。
 
-## Instance API
+## 實例 API
 
-Each basicScroll instance has a handful of handy functions. Below are all of them along with a short description.
+每個 basicScroll 實例都有數個方便的函式。以下列出所有函式與簡短說明。
 
 ### .start()
 
-Starts to animate the instance. basicScroll will track the scroll position and adjust the [props](#props) of the instance accordingly. An update will be performed only when the scroll position has changed.
+開始對該實例進行動畫。basicScroll 會追蹤捲動位置並相應調整實例的 [props](#props)。只有在捲動位置改變時才會更新。
 
-Example:
+範例：
 
 ```js
 instance.start()
@@ -203,9 +202,9 @@ instance.start()
 
 ### .stop()
 
-Stops to animate the instance. All [props](#props) of the instance will keep their last value.
+停止對該實例進行動畫。實例的所有 [props](#props) 都會維持最後的值。
 
-Example:
+範例：
 
 ```js
 instance.stop()
@@ -213,9 +212,9 @@ instance.stop()
 
 ### .destroy()
 
-Destroys the instance. Should be called when the instance is no longer needed. All [props](#props) of the instance will keep their last value.
+銷毀實例。當實例不再需要時應該呼叫。實例的所有 [props](#props) 都會維持最後的值。
 
-Example:
+範例：
 
 ```js
 instance.destroy()
@@ -223,23 +222,23 @@ instance.destroy()
 
 ### .update()
 
-Triggers an update of an instance, even when the instance is currently stopped.
+觸發實例更新，即使實例當前已停止。
 
-Example:
+範例：
 
 ```js
 const props = instance.update()
 ```
 
-Returns:
+回傳：
 
-- `{Object}` Applied props.
+- `{Object}` 套用後的 props。
 
 ### .calculate()
 
-Converts the [start and stop position](#start-and-stop-position) of the instance to absolute values. basicScroll relies on those values to start and stop the animation at the right position. It runs the calculation once during the instance creation. `.calculate()` should be called when elements have altered their position or when the size of the site/viewport has changed.
+將實例的 [開始與結束位置](#開始與結束位置) 轉換為絕對值。basicScroll 依據這些數值在正確位置啟動與停止動畫。計算會在實例建立時執行一次。當元素位置改變或網站/視窗大小變動時，應該呼叫 `.calculate()`。
 
-Example:
+範例：
 
 ```js
 instance.calculate()
@@ -247,75 +246,75 @@ instance.calculate()
 
 ### .isActive()
 
-Returns `true` when the instance is started and `false` when the instance is stopped.
+實例啟動時回傳 `true`，停止時回傳 `false`。
 
-Example:
+範例：
 
 ```js
 instance.isActive()
 ```
 
-Returns:
+回傳：
 
 - `{Boolean}`
 
 ### .getData()
 
-Returns calculated data. More or less a parsed version of the [data](#data) used for the instance creation. The data might change when calling the [calculate](#calculate) function.
+回傳計算後的資料。基本上是建立實例時使用的 [資料](#資料) 之解析版本。呼叫 [calculate](#calculate) 後資料可能會變更。
 
-Example:
+範例：
 
 ```js
 instance.getData()
 ```
 
-Returns:
+回傳：
 
-- `{Object}` Parsed [data](#data).
+- `{Object}` 解析後的 [資料](#資料)。
 
-## Data
+## 資料
 
-The data object can include the following properties:
+資料物件可包含以下屬性：
 
 ```js
 {
 	/*
-	 * DOM element/node.
+	 * DOM 元素或節點。
 	 */
 	elem: null,
 	/*
-	 * Start and stop position.
+	 * 開始與結束位置。
 	 */
 	from: null,
  	to: null,
 	/*
-	 * Direct mode.
+	 * 直接模式。
 	 */
 	direct: false,
 	/*
-	 * Track window size changes.
+	 * 追蹤視窗尺寸變化。
 	 */
 	track: true,
 	/*
-	 * Callback functions.
+	 * 回呼函式。
 	 */
 	inside: (instance, percentage, props) => {},
 	outside: (instance, percentage, props) => {},
 	/*
-	 * Props.
+	 * 屬性。
 	 */
 	props: {
 		/*
-		 * Property name / CSS Custom Properties.
+		 * 屬性名稱 / CSS 自訂屬性。
 		 */
 		'--name': {
 			/*
-			 * Start and end values.
+			 * 開始與結束值。
 			 */
 			from: null,
 			to: null,
 			/*
-			 * Animation timing.
+			 * 動畫時間函式。
 			 */
 			timing: 'ease'
 		}
@@ -323,17 +322,17 @@ The data object can include the following properties:
 }
 ```
 
-### DOM element/node
+### DOM 元素或節點
 
-Type: `Node` Default: `null` Optional: `true`
+類型：`Node` 預設：`null` 選填：`true`
 
-A DOM element/node.
+DOM 元素或節點。
 
-The position and size of the element will be used to convert the [start and stop position](#start-and-stop-position) to absolute values. How else is basicScroll supposed to know when to start and stop an animation with relative values?
+元素的位置與大小會用來將 [開始與結束位置](#開始與結束位置) 轉換為絕對值。沒有 DOM 元素時，basicScroll 無法判斷相對值動畫應在何時開始或停止。
 
-You can skip the property when using absolute values.
+當你使用絕對值時可以略過此屬性。
 
-Example:
+範例：
 
 ```js
 {
@@ -342,19 +341,19 @@ Example:
 }
 ```
 
-### Start and stop position
+### 開始與結束位置
 
-Type: `Integer|String` Default: `null` Optional: `false`
+類型：`Integer|String` 預設：`null` 選填：`false`
 
-basicScroll starts to animate the [props](#props) when the scroll position is above `from` and below `to`. Absolute and relative values are allowed.
+當捲動位置高於 `from` 且低於 `to` 時，basicScroll 會開始對 [props](#props) 進行動畫。可使用絕對值或相對值。
 
-Relative values require a [DOM element/node](#dom-elementnode). The first part of the value describes the element position, the last part describes the viewport position: `<element>-<viewport>`. `middle-bottom` in `from` specifies that the animation starts when the middle of the element reaches the bottom of the viewport.
+相對值需要 [DOM 元素或節點](#dom-元素或節點)。值的第一部分描述元素位置，最後一部分描述視窗位置：`<element>-<viewport>`。`from` 中的 `middle-bottom` 代表當元素中間到達視窗底部時開始動畫。
 
-Known relative values: `top-top`, `top-middle`, `top-bottom`, `middle-top`, `middle-middle`, `middle-bottom`, `bottom-top`, `bottom-middle`, `bottom-bottom`
+已知的相對值：`top-top`、`top-middle`、`top-bottom`、`middle-top`、`middle-middle`、`middle-bottom`、`bottom-top`、`bottom-middle`、`bottom-bottom`
 
-It's possible to track a custom anchor when you want to animate for [a specific viewport height](https://github.com/electerious/basicScroll/issues/26#issuecomment-449130809) or when you need to [start and end with an offset](https://github.com/electerious/basicScroll/issues/17#issuecomment-449134650).
+若想依 [特定視窗高度](https://github.com/electerious/basicScroll/issues/26#issuecomment-449130809) 或 [帶有偏移的起迄點](https://github.com/electerious/basicScroll/issues/17#issuecomment-449134650) 來動畫，也可以追蹤自訂錨點。
 
-Examples:
+範例：
 
 ```js
 {
@@ -383,17 +382,17 @@ Examples:
 }
 ```
 
-### Direct mode
+### 直接模式
 
-Type: `Boolean|Node` Default: `false` Optional: `true`
+類型：`Boolean|Node` 預設：`false` 選填：`true`
 
-basicScroll applies all [props](#props) globally by default. This way you can use variables everywhere in your CSS, even when the instance tracks just one element. Set `direct` to `true` or to a DOM element/node to apply all [props](#props) directly to the [DOM element/node](#dom-elementnode) or to the DOM element/node you have specified. This also allows you to animate CSS properties, not just CSS variables.
+basicScroll 預設將所有 [props](#props) 全域套用。即使實例只追蹤單一元素，你也能在任何 CSS 中使用這些變數。將 `direct` 設為 `true` 或 DOM 元素/節點，可把所有 [props](#props) 直接套用到 [DOM 元素或節點](#dom-元素或節點) 或指定的 DOM 元素/節點。這也讓你可以動畫化 CSS 屬性，而不只是 CSS 變數。
 
-- `false`: Apply props globally (default)
-- `true`: Apply props to the [DOM element/node](#dom-elementnode)
-- `Node`: Apply props to a DOM element/node of your choice
+- `false`：全域套用 props（預設）
+- `true`：套用至 [DOM 元素或節點](#dom-元素或節點)
+- `Node`：套用至你指定的 DOM 元素/節點
 
-Examples:
+範例：
 
 ```html
 <!-- direct: false -->
@@ -419,15 +418,15 @@ Examples:
 </html>
 ```
 
-### Track window size changes
+### 追蹤視窗尺寸變化
 
-Type: `Boolean` Default: `true` Optional: `true`
+類型：`Boolean` 預設：`true` 選填：`true`
 
-basicScroll automatically recalculates and updates instances when the size of the window changes. You can disable the tracking for each instance individually when you want to take care of it by yourself.
+basicScroll 會在視窗尺寸改變時自動重新計算並更新實例。若想自行處理，可為每個實例停用追蹤。
 
-Note: basicScroll only tracks the window size. You still must recalculate and update your instances manually when you modify your site. Each modification that changes the layout of the page should trigger such an update in your code.
+注意：basicScroll 只會追蹤視窗尺寸。當你修改網站而影響版面時，仍需手動重新計算並更新實例。任何會改變頁面佈局的修改都應觸發此更新。
 
-Example:
+範例：
 
 ```js
 const instance = basicScroll.create({
@@ -443,8 +442,8 @@ const instance = basicScroll.create({
 	}
 })
 
-// Recalculate and update your instance manually when the tracking is disabled.
-// Debounce this function in production to avoid unnecessary calculations.
+// 若停用了追蹤，請自行在視窗尺寸改變時重新計算與更新。
+// 在正式環境中請為此函式加上防抖以避免不必要的計算。
 window.onresize = function() {
 
 	instance.calculate()
@@ -453,21 +452,21 @@ window.onresize = function() {
 }
 ```
 
-### Callback functions
+### 回呼函式
 
-Type: `Function` Default: `() => {}` Optional: `true`
+類型：`Function` 預設：`() => {}` 選填：`true`
 
-- The `inside` callback executes when the user scrolls and the viewport is within the given [start and stop position](#start-and-stop-position).
-- The `outside` callback executes when the user scrolls and the viewport is outside the given [start and stop position](#start-and-stop-position).
+- 當使用者捲動且視窗位於給定 [開始與結束位置](#開始與結束位置) 之間時，會執行 `inside` 回呼。
+- 當使用者捲動且視窗位於給定 [開始與結束位置](#開始與結束位置) 之外時，會執行 `outside` 回呼。
 
-Both callbacks receive the current instance, a percentage and the calculated properties:
+兩個回呼都會收到目前的實例、百分比與計算後的屬性：
 
-- `< 0%` percent = Scroll position is below `from`
-- `= 0%` percent = Scroll position is `from`
-- `= 100%` percent = Scroll position is `to`
-- `> 100%` percent = Scroll position is above `from`
+- `< 0%` 百分比 = 捲動位置在 `from` 下方
+- `= 0%` 百分比 = 捲動位置等於 `from`
+- `= 100%` 百分比 = 捲動位置等於 `to`
+- `> 100%` 百分比 = 捲動位置在 `from` 上方
 
-Example:
+範例：
 
 ```js
 {
@@ -480,15 +479,15 @@ Example:
 
 ### Props
 
-Type: `Object` Default: `{}` Optional: `true`
+類型：`Object` 預設：`{}` 選填：`true`
 
-Values to animate when the scroll position changes.
+當捲動位置變化時需要動畫化的數值。
 
-Each prop of the object represents a CSS property or CSS Custom Property (CSS variables). Custom CSS properties always start with two dashes. A prop with the name `--name` is accessible with `var(--name)` in CSS.
+物件中的每個 prop 都代表一個 CSS 屬性或 CSS 自訂屬性（CSS 變數）。自訂 CSS 屬性一律以兩個破折號開頭。名稱為 `--name` 的 prop 可在 CSS 內用 `var(--name)` 取得。
 
-More about [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables).
+更多資訊請參閱 [CSS 自訂屬性](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables)。
 
-Example:
+範例：
 
 ```js
 {
@@ -500,13 +499,13 @@ Example:
 }
 ```
 
-### Start and end values
+### 開始與結束值
 
-Type: `Integer|String` Default: `null` Optional: `false`
+類型：`Integer|String` 預設：`null` 選填：`false`
 
-Works with all kinds of units. basicScroll uses the unit of `to` when `from` has no unit.
+支援各種單位。當 `from` 沒有單位時，basicScroll 會使用 `to` 的單位。
 
-Examples:
+範例：
 
 ```js
 '--name': {
@@ -535,15 +534,15 @@ Examples:
 }
 ```
 
-### Animation timing
+### 動畫時間函式
 
-Type: `String|Function` Default: `linear` Optional: `true`
+類型：`String|Function` 預設：`linear` 選填：`true`
 
-A known timing or a custom function. Easing functions get just one argument, which is a value between 0 and 1 (the percentage of how much of the animation is done). The function should return a value between 0 and 1 as well, but for some timings a value less than 0 or greater than 1 is just fine.
+可使用已知的時間函式或自訂函式。緩動函式只會收到一個介於 0 與 1 之間的值（動畫已完成的百分比）。函式應回傳 0 到 1 之間的值，但部分時間函式允許小於 0 或大於 1 的結果。
 
-Known timings: `backInOut`, `backIn`, `backOut`, `bounceInOut`, `bounceIn`, `bounceOut`, `circInOut`, `circIn`, `circOut`, `cubicInOut`, `cubicIn`, `cubicOut`, `elasticInOut`, `elasticIn`, `elasticOut`, `expoInOut`, `expoIn`, `expoOut`, `linear`, `quadInOut`, `quadIn`, `quadOut`, `quartInOut`, `quartIn`, `quartOut`, `quintInOut`, `quintIn`, `quintOut`, `sineInOut`, `sineIn`, `sineOut`
+已知的時間函式：`backInOut`、`backIn`、`backOut`、`bounceInOut`、`bounceIn`、`bounceOut`、`circInOut`、`circIn`、`circOut`、`cubicInOut`、`cubicIn`、`cubicOut`、`elasticInOut`、`elasticIn`、`elasticOut`、`expoInOut`、`expoIn`、`expoOut`、`linear`、`quadInOut`、`quadIn`、`quadOut`、`quartInOut`、`quartIn`、`quartOut`、`quintInOut`、`quintIn`、`quintOut`、`sineInOut`、`sineIn`、`sineOut`
 
-Examples:
+範例：
 
 ```js
 '--name': {
@@ -559,15 +558,15 @@ Examples:
 }
 ```
 
-## Related
+## 相關資源
 
-- [ngx-basicscroll](https://github.com/theunreal/ngx-basicscroll) - Angular wrapper for basicScroll
-- [react-basic-scroll](https://github.com/liorbd/react-basic-scroll) - React wrapper for basicScroll
+- [ngx-basicscroll](https://github.com/theunreal/ngx-basicscroll) - basicScroll 的 Angular 封裝
+- [react-basic-scroll](https://github.com/liorbd/react-basic-scroll) - basicScroll 的 React 封裝
 
-## Tips
+## 小技巧
 
-- Only animate `transform` and `opacity` and use `will-change` to [hint browsers about the kind of changes](https://developer.mozilla.org/de/docs/Web/CSS/will-change). This way the browser can setup appropriate optimizations ahead of time before the element is actually changed.
-- Keep the amount of instances low. More instances means more checks, calculations and style changes.
-- Don't animate everything at once and don't animate too many properties. Browsers don't like this.
-- Smooth animations by adding a short transition to the element: `transform: translateY(var(--ty)); transition: transform .1s`.
-- basicScroll applies all [props](#props) globally by default. Try to reuse variables across elements instead of creating more instances.
+- 只動畫 `transform` 與 `opacity`，並使用 `will-change` 來 [提示瀏覽器可能的變化](https://developer.mozilla.org/de/docs/Web/CSS/will-change)。如此能讓瀏覽器提前做好最佳化準備。
+- 盡量減少實例數量。更多實例代表更多檢查、計算與樣式變更。
+- 不要一次動畫所有東西，也不要一次動畫太多屬性。瀏覽器不喜歡這樣。
+- 在元素上加上短暫的 transition 來讓動畫更順暢：`transform: translateY(var(--ty)); transition: transform .1s`。
+- basicScroll 預設將所有 [props](#props) 全域套用。試著重複使用變數，而不是建立更多實例。
