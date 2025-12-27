@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="en">
 
 	<meta charset="utf-8">
-	<title>basicScroll 範例</title>
+	<title>basicScroll Demo</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -57,13 +57,13 @@
 	</div>
 
 	<div class="container">
-		<div class="box rotateBox">旋轉</div>
-		<div class="box fadeBox">淡化</div>
+		<div class="box rotateBox">rotate</div>
+		<div class="box fadeBox">fade</div>
 	</div>
 
 	<div class="container">
-		<div class="box referenceBox">參考</div>
-		<div class="box directBox">直接</div>
+		<div class="box referenceBox">reference</div>
+		<div class="box directBox">direct</div>
 	</div>
 
 	<script src="../dist/basicScroll.min.js"></script>
@@ -113,8 +113,8 @@
 			elem: document.querySelector('.fadeBox'),
 			from: 'bottom-bottom',
 			to: 'top-middle',
-			inside: (instance, percentage, props) => console.log('淡化方塊正在運作'),
-			outside: (instance, percentage, props) => console.log('淡化方塊未在運作'),
+			inside: (instance, percentage, props) => console.log('fadeBox is animating'),
+			outside: (instance, percentage, props) => console.log('fadeBox is not animating'),
 			props: {
 				'--o': {
 					from: .01,
